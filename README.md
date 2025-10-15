@@ -20,9 +20,13 @@ O objetivo é demonstrar domínio das tecnologias básicas de front-end e boas p
 ## 📂 Estrutura (em desenvolvimento)
 
 ┣ 📁 assets
+
 ┣ 📁 css
+
 ┣ 📁 js
+
 ┣ 📜 index.html
+
 ┗ 📜 README.md
 
 ## 🛠️ Status do projeto
