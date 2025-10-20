@@ -19,15 +19,19 @@ O objetivo é demonstrar domínio das tecnologias básicas de front-end e boas p
 
 ## 📂 Estrutura (em desenvolvimento)
 
-┣ 📁 assets
+┣ 📁 src/
 
-┣ 📁 css
+┃ ┣ 📁 assets/        
 
-┣ 📁 js
+┃ ┣ 📁 css/           
 
-┣ 📜 index.html
+┃ ┣ 📁 js/          
 
-┗ 📜 README.md
+┃ ┗ 📁 pages/        
+
+┣ 📜 README.md
+
+┗ 📜 index.html
 
 ## 🛠️ Status do projeto
 Em desenvolvimento 🧑‍💻
@@ -37,7 +41,7 @@ Em desenvolvimento 🧑‍💻
 
 | Fase | Descrição da Etapa | Atividades Detalhadas | Entregáveis | Tempo Estimado | Tempo de Conclusão |
 |------|--------------------|------------------------|--------------|----------------|--------------------|
-| **1. Planejamento e Estruturação** | Definir arquitetura, layout e componentes base do projeto. | - Criar pasta e estrutura inicial do projeto.<br>- Configurar HTML base (`index.html` e `main.html`).<br>- Integrar Bootstrap e arquivos CSS/JS.<br>- Criar wireframe simples do layout (sidebar + área principal). | Estrutura de pastas pronta + HTML base criado. | 19/10 - 2h | — |
+| **1. Planejamento e Estruturação** | Definir arquitetura, layout e componentes base do projeto. | - Criar pasta e estrutura inicial do projeto.<br>- Configurar HTML base (`index.html` e `main.html`).<br>- Integrar Bootstrap e arquivos CSS/JS.<br>- Criar wireframe simples do layout (sidebar + área principal). | Estrutura de pastas pronta + HTML base criado. | 19/10 - 2h | 2h20min |
 | **2. Design e Layout Responsivo (Bootstrap 5)** | Construir o layout visual e a responsividade. | - Implementar header e sidebar com Bootstrap.<br>- Criar grid para o painel principal.<br>- Ajustar responsividade (mobile-first).<br>- Definir cores, tipografia e estilo base.<br>- Inserir ícones e placeholders visuais. | Layout responsivo funcional e esteticamente consistente. | 19/10 - 2h | — |
 | **3. Lógica JavaScript – Estrutura Principal** | Iniciar a programação funcional do projeto. | - Criar scripts para alternar seções (Tarefas, Estatísticas, Perfil).<br>- Implementar menu lateral colapsável.<br>- Criar estrutura modular de JS (`main.js`, `functions.js`, `storage.js`, etc.). | Navegação dinâmica entre seções + sidebar funcional. | 20/10 - 4h | — |
 | **4. Módulo de Tarefas (CRUD + LocalStorage)** | Implementar o coração do projeto. | - Criar formulário de cadastro de usuário.<br>- Implementar funções: adicionar, editar, excluir e concluir.<br>- Persistir dados no LocalStorage.<br>- Renderizar cards dinamicamente. | Módulo de usuários 100% funcional e persistente. | 21/10 - 6h | — |
