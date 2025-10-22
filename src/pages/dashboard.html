@@ -1,139 +1,181 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>SGI PrestContas</title>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
-        <link rel="stylesheet" href="Teste_Front-End_Insight\src\css\style.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SGI PrestContas</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+</head>
 
-    <body>
-        <!-- MENU LATERAL -->
-        <aside>
-            <h2>SiS <span>CONVÊNIOS</span></h2>
-            <nav>
-                <ul>
-                    <li><a href="#">Usuário</a></li>
-                    <li><a href="#">Instrumentos</a></li>
-                    <li>
-                        <a href="#">Plano de Trabalho</a>
-                        <ul>
-                            <li><a href="#">Criar</a></li>
-                            <li><a href="#">Aditivo de prazo</a></li>
-                            <li><a href="#">Aditivo de valor</a></li>
-                        </ul>
+<body>
+    <!-- CABEÇALHO -->
+    <header class="navbar navbar-expand-lg bg-body-tertiary text-white" style="padding-top: 0; ">
+        <div class="container-fluid" style="background-color: brown;">
+            <a class="navbar-brand text-white" href="#"><strong>SGI - PrestContas</strong> | Sistema de Gestão
+                Integrada</a>
+            <div class="collapse-navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        Seja bem-vindo <strong>Tio Patinhas</strong>, hoje é 17 de outubro de 2025
                     </li>
-                    <li>
-                        <a href="#">Execução</a>
-                        <ul>
-                            <li><a href="#">Processos</a></li>
-                            <li><a href="#">Protocolos</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Ajuda</a></li>
-                    <li><a href="#">Sair</a></li>
                 </ul>
-            </nav>
-        </aside>
-
-        <!-- CABEÇALHO -->
-        <header>
-            <div>
-                <strong>SGI - PrestContas</strong> | Sistema de Gestão Integrada
             </div>
-            <div>
-                Seja bem-vindo <strong>Tio Patinhas</strong>, hoje é 17 de outubro de 2025
-            </div>
-        </header>
-        <nav>
-            <button>Prestação de Contas</button>
-            <button>Gestão Patrimonial</button>
-            <button>Gestão de Frota</button>
-            <button>Pesquisa</button>
-            <button>Gestão de Documentos</button>
-            <button>Ajuda</button>
-            <button>Sair</button>
-        </nav>
+        </div>
+    </header>
 
-        <!-- CONTEÚDO PRINCIPAL -->
-        <main>
-            <h1>Criar Plano de Trabalho</h1>
+    <nav>
+        <button>Prestação de Contas</button>
+        <button>Gestão Patrimonial</button>
+        <button>Gestão de Frota</button>
+        <button>Pesquisa</button>
+        <button>Gestão de Documentos</button>
+        <button>Ajuda</button>
+        <button>Sair</button>
+    </nav>
 
-            <!-- SEÇÃO: Dados do Instrumento -->
-            <section>
-                <h2>Dados do Instrumento</h2>
-                <table>
-                    <tr>
-                        <td><strong>IDENTIFICADOR:</strong></td>
-                        <td><strong>ENTIDADE:</strong></td>
-                        <td><strong>CONCEDENTE:</strong></td>
-                        <td><strong>INTERVENIENTE:</strong></td>
-                    </tr>
-                    <tr>
-                        <td><strong>SETOR:</strong></td>
-                        <td><strong>CATEGORIA:</strong></td>
-                        <td><strong>PALAVRA CHAVE:</strong></td>
-                        <td><strong>TIPO DE INSTRUMENTO:</strong></td>
-                    </tr>
-                    <tr>
-                        <td colspan="3"><strong>OBJETO:</strong></td>
-                        <td><strong>SIAFI/SICONV:</strong></td>
-                    </tr>
-                    <tr>
-                        <td><strong>RESPONSÁVEL:</strong></td>
-                        <td><strong>TIPO DE CHECKLIST:</strong></td>
-                        <td><strong>EXECUÇÕES:</strong></td>
-                    </tr>
-                </table>
-            </section>
+    <!-- MENU LATERAL -->
+    <aside>
+        <div class="box">
+            <h2>SiS <span>CONVÊNIOS</span></h2>
+            <hr />
+            <ul class="list-unstyled">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                    class="bi bi-person-fill" viewBox="0 0 16 16">
+                    <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+                </svg> <a href="#" class="text-white text-decoration-none aling-itens-center">Usuário</a>
+                <br><br>
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                    class="bi bi-list-task" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M2 2.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5V3a.5.5 0 0 0-.5-.5zM3 3H2v1h1z" />
+                    <path
+                        d="M5 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5M5.5 7a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1zm0 4a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1z" />
+                    <path fill-rule="evenodd"
+                        d="M1.5 7a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5zM2 7h1v1H2zm0 3.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm1 .5H2v1h1z" />
+                </svg> <a href="#" class="text-white text-decoration-none py-1 p-1">Instrumentos</a>
+                <li class="mt-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                        class="bi bi-bar-chart-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M1 11a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1zm5-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1zm5-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1z" />
+                    </svg><a href="#" class="text-white text-decoration-none p-2">Plano de Trabalho</a>
+                    <ul class="list-unstyled ms-3">
+                        <li><a href="#" class="text-white-50 text-decoration-none d-block py-1 p-5">Criar</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none d-block py-1 p-5">Aditivo de
+                                prazo</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none d-block py-1 p-5">Aditivo de
+                                valor</a></li>
+                    </ul>
+                </li>
+                <li class="mt-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                        class="bi bi-arrow-clockwise" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M8 3a5 5 0 1 0 4.546 2.914.5.5 0 0 1 .908-.417A6 6 0 1 1 8 2z" />
+                        <path
+                            d="M8 4.466V.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L8.41 4.658A.25.25 0 0 1 8 4.466" />
+                    </svg> <a href="#" class="text-white text-decoration-none p-1 aling-itens-center">Execução</a>
+                    <ul class="list-unstyled ms-3">
+                        <li><a href="#" class="text-white-50 text-decoration-none d-block py-1 p-5">Processos</a>
+                        </li>
+                        <li><a href="#" class="text-white-50 text-decoration-none d-block py-1 p-5">Protocolos</a>
+                        </li>
+                    </ul>
+                </li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                    class="bi bi-question-diamond-fill" viewBox="0 0 16 16">
+                    <path
+                        d="M9.05.435c-.58-.58-1.52-.58-2.1 0L.436 6.95c-.58.58-.58 1.519 0 2.098l6.516 6.516c.58.58 1.519.58 2.098 0l6.516-6.516c.58-.58.58-1.519 0-2.098zM5.495 6.033a.237.237 0 0 1-.24-.247C5.35 4.091 6.737 3.5 8.005 3.5c1.396 0 2.672.73 2.672 2.24 0 1.08-.635 1.594-1.244 2.057-.737.559-1.01.768-1.01 1.486v.105a.25.25 0 0 1-.25.25h-.81a.25.25 0 0 1-.25-.246l-.004-.217c-.038-.927.495-1.498 1.168-1.987.59-.444.965-.736.965-1.371 0-.825-.628-1.168-1.314-1.168-.803 0-1.253.478-1.342 1.134-.018.137-.128.25-.266.25zm2.325 6.443c-.584 0-1.009-.394-1.009-.927 0-.552.425-.94 1.01-.94.609 0 1.028.388 1.028.94 0 .533-.42.927-1.029.927" />
+                </svg><a href="#" class="text-white text-decoration-none py-1 mt-2 p-2">Ajuda</a>
+                <br><br>
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-x-lg"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
+                </svg><a href="#" class="text-white text-decoration-none py-1 p-2">Sair</a>
+            </ul>
+        </div>
+    </aside>
 
-            <!-- SEÇÃO: Repasse -->
-            <section>
-                <h2>REPASSE</h2>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>OBJETO</th>
-                            <th>INÍCIO</th>
-                            <th>TÉRMINO</th>
-                            <th>Repasse</th>
-                            <th>CONTRAPARTIDA</th>
-                            <th>TOTAL</th>
-                            <th>AÇÕES</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>LEI ALDIR BLANC CICLO 2 2</td>
-                            <td>15 de Abril de 2025</td>
-                            <td>31 de Dezembro de 2029</td>
-                            <td>410.654,96</td>
-                            <td>0,00</td>
-                            <td>410.654,96</td>
-                            <td>
-                                <a href="#">Editar</a> |
-                                <a href="#">Excluir</a>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </section>
-        </main>
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main>
+        <h1>Criar Plano de Trabalho</h1>
 
-        <!-- Scripts (Bootstrap e seu JS local) -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="Teste_Front-End_Insight/src/js/main.js"></script>
-        <footer>
-            <p>&copy; 2025 PrestContas</p>
-            <p>Contatos</p>
-            <p>(83) 3400-0040</p>
-            <p>(83) 9 9981-8237</p>
-            <p>contato@prestcontas.com.br</p>
-            <p>suporte-ti@prestcontas.com.br</p>
-            <p>engenhariadesoftwares@prestcontas.com.br</p>
-            </p>
-        </footer>
-    </body>
+        <!-- SEÇÃO: Dados do Instrumento -->
+        <section>
+            <h2>Dados do Instrumento</h2>
+            <table>
+                <tr>
+                    <td><strong>IDENTIFICADOR:</strong></td>
+                    <td><strong>ENTIDADE:</strong></td>
+                    <td><strong>CONCEDENTE:</strong></td>
+                    <td><strong>INTERVENIENTE:</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>SETOR:</strong></td>
+                    <td><strong>CATEGORIA:</strong></td>
+                    <td><strong>PALAVRA CHAVE:</strong></td>
+                    <td><strong>TIPO DE INSTRUMENTO:</strong></td>
+                </tr>
+                <tr>
+                    <td colspan="3"><strong>OBJETO:</strong></td>
+                    <td><strong>SIAFI/SICONV:</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>RESPONSÁVEL:</strong></td>
+                    <td><strong>TIPO DE CHECKLIST:</strong></td>
+                    <td><strong>EXECUÇÕES:</strong></td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- SEÇÃO: Repasse -->
+        <section>
+            <h2>REPASSE</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>OBJETO</th>
+                        <th>INÍCIO</th>
+                        <th>TÉRMINO</th>
+                        <th>Repasse</th>
+                        <th>CONTRAPARTIDA</th>
+                        <th>TOTAL</th>
+                        <th>AÇÕES</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>LEI ALDIR BLANC CICLO 2 2</td>
+                        <td>15 de Abril de 2025</td>
+                        <td>31 de Dezembro de 2029</td>
+                        <td>410.654,96</td>
+                        <td>0,00</td>
+                        <td>410.654,96</td>
+                        <td>
+                            <a href="#">Editar</a> |
+                            <a href="#">Excluir</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <!-- Scripts (Bootstrap e seu JS local) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="Teste_Front-End_Insight/src/js/main.js"></script>
+    <footer>
+        <p>&copy; 2025 PrestContas</p>
+        <p>Contatos</p>
+        <p>(83) 3400-0040</p>
+        <p>(83) 9 9981-8237</p>
+        <p>contato@prestcontas.com.br</p>
+        <p>suporte-ti@prestcontas.com.br</p>
+        <p>engenhariadesoftwares@prestcontas.com.br</p>
+        </p>
+    </footer>
+</body>
+
 </html>

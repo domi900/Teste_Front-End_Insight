@@ -1,0 +1,28 @@
+.box{
+    padding: auto;
+    width: 280px;
+    height: 100%;
+    background-color: #120639;  
+    padding-top: 0;
+}
+
+.box h2{
+    display: flex;
+    justify-content: center;
+    color: #888d5e;
+    font-style: normal;
+    align-content: center;
+}
+.box ul{
+    color: rgb(255, 255, 255);
+}
+
+.box ul a{
+    color: rgb(255, 255, 255);
+}
+
+.box h2 span{
+    color: #4f80de;
+    align-content: center;
+}
+
