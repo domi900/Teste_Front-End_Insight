@@ -1,11 +1,173 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SGI PrestContas</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+
 </head>
-<body>
-    
+
+
+<body class="bg-light">
+
+    <div class="container-fluid">
+        <div class="row">
+
+            <!-- MENU LATERAL -->
+            <aside class="col-md-2 col-lg-2 bg-primary text-white min-vh-100 p-3">
+                <h2 class="fs-4 text-center mb-4">SiS <span class="text-warning">CONVÊNIOS</span></h2>
+                <nav>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white text-decoration-none d-block py-1">Usuário</a></li>
+                        <li><a href="#" class="text-white text-decoration-none d-block py-1">Instrumentos</a></li>
+                        <li class="mt-2">
+                            <a href="#" class="text-white text-decoration-none d-block">Plano de Trabalho</a>
+                            <ul class="list-unstyled ms-3">
+                                <li><a href="#" class="text-white-50 text-decoration-none d-block py-1">Criar</a></li>
+                                <li><a href="#" class="text-white-50 text-decoration-none d-block py-1">Aditivo de
+                                        prazo</a></li>
+                                <li><a href="#" class="text-white-50 text-decoration-none d-block py-1">Aditivo de
+                                        valor</a></li>
+                            </ul>
+                        </li>
+                        <li class="mt-2">
+                            <a href="#" class="text-white text-decoration-none d-block">Execução</a>
+                            <ul class="list-unstyled ms-3">
+                                <li><a href="#" class="text-white-50 text-decoration-none d-block py-1">Processos</a>
+                                </li>
+                                <li><a href="#" class="text-white-50 text-decoration-none d-block py-1">Protocolos</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#" class="text-white text-decoration-none d-block py-1 mt-2">Ajuda</a></li>
+                        <li><a href="#" class="text-white text-decoration-none d-block py-1">Sair</a></li>
+                    </ul>
+                </nav>
+            </aside>
+
+            <!-- ÁREA PRINCIPAL -->
+            <main class="col-md-10 col-lg-10 p-0">
+
+                <!-- CABEÇALHO SUPERIOR -->
+                <header class="bg-danger text-white p-2 d-flex justify-content-between">
+                    <div><strong>SGI - PrestContas</strong> | Sistema de Gestão Integrada</div>
+                    <div>Seja bem-vindo <strong>Tio Patinhas</strong>, hoje é 17 de outubro de 2025</div>
+                </header>
+
+                <!-- MENU SUPERIOR -->
+                <nav class="bg-light border-bottom py-2 px-3 d-flex justify-content-end">
+                    <button class="btn btn-danger btn-sm me-2">Prestação de Contas</button>
+                    <button class="btn btn-outline-secondary btn-sm me-2">Gestão Patrimonial</button>
+                    <button class="btn btn-outline-secondary btn-sm me-2">Gestão de Frota</button>
+                    <button class="btn btn-outline-secondary btn-sm me-2">Pesquisa</button>
+                    <button class="btn btn-outline-secondary btn-sm me-2">Gestão de Documentos</button>
+                    <button class="btn btn-outline-secondary btn-sm me-2">Ajuda</button>
+                    <button class="btn btn-outline-secondary btn-sm">Sair</button>
+                </nav>
+
+
+                <!-- CONTEÚDO PRINCIPAL -->
+                <div class="container mt-4">
+                    <h1 class="h3 mb-3">Criar Plano de Trabalho</h1>
+
+                    <!-- DADOS DO INSTRUMENTO -->
+                     <div class=" Dados-do-Instrumento card-header bg-danger rounded-0 text-white">
+                            <h2 class="h6 m-0">Dados do Instrumento</h2>
+                        </div>
+                    <section class="card mb-4">
+                        <div class="card-body">
+                            <div class="row mb-2">
+                                <div class="col-md-3"><strong>IDENTIFICADOR:</strong> 14.638</div>
+                            </div>
+                            <div class="row mb-2">
+                                <div class="col-md-3"><strong>ENTIDADE:</strong> MUNICÍPIO DE PAULISTA</div>
+                                <div class="col-md-3"><strong>CONCEDENTE:</strong> MINISTÉRIO DA CULTURA</div>
+                                <div class="col-md-3"><strong>INTERVENIENTE:</strong> -</div>
+                            </div>
+                            <div class="row mb-2">
+                                <div class="col-md-3"><strong>SETOR:</strong> GOVERNO FEDERAL/CAIXA</div>
+                                <div class="col-md-3"><strong>CATEGORIA:</strong> CULTURA FUNDO A FUNDO</div>
+                                <div class="col-md-3"><strong>PALAVRA CHAVE:</strong> Lei Aldir Blanc</div>
+                                <div class="col-md-3"><strong>TIPO DE INSTRUMENTO:</strong> FUNDO A FUNDO</div>
+                            </div>
+                            <div class="row mb-2">
+                                <div class="col-md-9">
+                                    <strong>OBJETO:</strong> A finalidade desse instrumento é estabelecer diretrizes e
+                                    ações para a
+                                    execução da Lei Aldir Blanc, visando a promoção e valorização da cultura local por
+                                    meio do incentivo
+                                    financeiro e de apoio aos artistas e espaços culturais afetados pela pandemia.
+                                </div>
+                                <div class="col-md-3">
+                                    <strong>SIAFI/SICONV:</strong> - <br>
+                                    <strong>Nº OPERAÇÃO:</strong> 30882120250002021887
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4"><strong>RESPONSÁVEL:</strong> Railani Pereira da Silva</div>
+                                <div class="col-md-4"><strong>TIPO DE CHECKLIST:</strong> ALDIR BLANC</div>
+                                <div class="col-md-4"><strong>EXECUÇÕES:</strong> 1</div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- BOTÃO ADICIONAR -->
+                    <div class="text-end mb-3">
+                        <button class="btn btn-primary btn-sm">Adicionar</button>
+                    </div>
+
+                    <!-- TABELA -->
+                    <div class="card">
+                        <div class="card-body">
+                            <table class="table table-bordered table-hover">
+                                <thead class="table-light">
+                                    <tr>
+                                        <th>OBJETO</th>
+                                        <th>INÍCIO</th>
+                                        <th>TÉRMINO</th>
+                                        <th>REPASSE</th>
+                                        <th>CONTRAPARTIDA</th>
+                                        <th>TOTAL</th>
+                                        <th>AÇÕES</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>LEI ALDIR BLANC CICLO 2</td>
+                                        <td>15 de Abril de 2025</td>
+                                        <td>31 de Dezembro de 2029</td>
+                                        <td>410.654,96</td>
+                                        <td>0,00</td>
+                                        <td>410.654,96</td>
+                                        <td>
+                                            <button class="btn btn-success btn-sm">✏️</button>
+                                            <button class="btn btn-danger btn-sm">🗑️</button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- RODAPÉ -->
+                <footer class="bg-dark text-light py-2 mt-5">
+                    <p class="mb-0">&copy; 2025 PrestContas&reg;</p>
+                </footer>
+            </main>
+
+        </div>
+    </div>
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="Teste_Front-End_Insight/src/js/main.js"></script>
+    <footer class="bg-dark text-light py-3 mt-5">
+        <p class="mb-0">&copy; 2025 PrestContas</p>
+    </footer>
 </body>
+
 </html>
