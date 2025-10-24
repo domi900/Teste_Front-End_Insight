@@ -1,0 +1,47 @@
+main{ /*CENTRALIZAR CONTAINER PRINCIPAL VERTICALMENTE*/
+    height: 100vh; 
+}
+
+body{ /*COR DE FUNDO*/
+    background-color: #ffdad8; 
+}
+
+button { /*ESTILIZAÇÃO DO BOTÃO*/
+    background-color: #840705 !important;
+    border: none !important;
+    padding: 10px 60px!important;
+    display: block !important;
+    margin: 0 auto !important;
+    width: fit-content !important;
+    
+}
+
+.ajusteText{ /*CENTRALIZAR TEXTO PRINCIPAL*/
+    margin-top: 15%;
+}
+
+.text-center { /*ESTILIZAÇÃO DO CARD VERMELHO*/
+    background-color: #840705;
+    color: white;
+}
+
+.myCard{ /*ESTILIZAÇÃO DO CARD PRINCIPAL*/
+    width: 90%;
+    height: auto;
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.5);
+    border: none;
+}
+
+.password{ /*ESTILIZAÇÃO "ESQUECEU A SENHA?"*/
+    color: #367FC2;
+}
+
+
+
+
+
+
+
+
+
+

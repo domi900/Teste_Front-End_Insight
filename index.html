@@ -1,50 +1,80 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+<!doctype html>
+<html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>SGI PrestContas</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>SGI PrestContas</title>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
-        <link rel="stylesheet" href="Teste_Front-End_Insight\src\css\style.css">
-    </head>
-    <body>
-        <main>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PrestContas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
 
-            <!--card de apresentação-->
-            <h1>SGI PrestContas <br> Sistema de Gestão Integrada</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est
-                laborum.</p>
-            
-            <!--logo e titulo do formulario de login-->
-            <img src="" alt="SGI Logo">
-            <h2>Login</h2>
+<body >
+    <!--CONTAINER PRINCIPAL (MANTER OS ELEMENTOS ALINHADOS VERTICALMENTE E CENTRALIZADOS)-->
+    <main class="d-flex align-items-center"> 
+        <!--CARD CENTRAL (DEFINE O BLOCO PRINCIPAL E CENTRALIZA HORIZONTALMENTE)-->
+        <div class="card myCard mx-auto"> 
+            <!--ORGANIZAR AS COLUNAS LADO A LADO-->
+            <div class="row g-0">
+                <!--COLUNA DE CONTEÚDO AO LADO ESQUERDO(LARGURA E ALINHAMENTO DE TEXTO)-->
+            <div class="col-md-8 px-5 text-center">
+                <!--DIV DO TEXTO PRINCIPAL-->
+                <div class="ajusteText">
+                <h1>SGI - PrestContas <br> Sistema de Gestão Integrada</h1>
+                <hr>
+                <!--PARÁGRAFO DE TEXTO DEMONSTRTIVO-->
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                    enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                    in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                    nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                    sunt in culpa qui officia deserunt mollit anim id est
+                    laborum.</p>
+                </div>    
 
-            <!-- formulário de login -->
-            <form action="/login" method="post">
-                <label for="username">Usuário:</label>
-                <input type="text" id="username" name="username" required placeholder="username">
-                <br>
-                <label for="password">Senha:</label>
-                <input type="password" id="password" name="password" required placeholder="password">
-                <br>
-                <input type="checkbox" id="Manter" name="Manter conectado"><label for="Manter">Manter conectado</label>
-                <br>
-                <button type="submit">Entrar</button>
-                <br>
-                <a href="/forgot-password">Esqueceu a senha?</a>
-            </form>
-        </main>
-        <script src="Teste_Front-End_Insight\src\js\main.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-    </body>
+            </div>
+             <!--COLUNA DE CONTEÚDO AO LADO DIREITO-->
+            <div class="col-md-4">
+                <div class="card-body" >
+                     <!--IMAGEM LOGO PRESTCONTAS-->
+                    <img class="d-block mx-auto"src="src/assets/imgs/logo-removebg-preview.png" alt=""><br><br>
+                    <h4>Login</h4>
+                     <!--FORMULÁRIO (EMAIL E SENHA)-->
+                    <form>
+                        <!--BLOCO DIGITAR EMAIL-->
+                        <div class="input-group mb-3">
+                            <!--ESTILIZAÇÃO DA CAIXA DE TEXTO JUNTAMENTE COM FIGURA AO LADO ESQUERDO-->
+                            <span class="input-group-text" id="person"><object data="src/assets/imgs/person_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" type=""></object></span>
+                                <input type="email" class="form-control" placeholder="email">
+                        </div>
+                        <!--BLOCO DIGITAR SENHA-->
+                        <div class="input-group mb-3">
+                            <!--ESTILIZAÇÃO DA CAIXA DE TEXTO JUNTAMENTE COM FIGURA AO LADO ESQUERDO-->
+                            <span class="input-group-text" id="asterisk"><object data="src/assets/imgs/emergency_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" type=""></object></span>
+                            <input type="password" class="form-control" id="Password" placeholder="senha" required>
+                        </div>
+                        <!--BLOCO DE CONFIRMAR SE DESEJA MANTER CONECTADO-->
+                        <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" role="switch" id="switchCheckDefault">
+                        <label class="form-check-label" for="switchCheckDefault">Manter Conectado</label>
+                        </div>
+                        <!--TEXTO DE ESQUECEU A SENHA-->
+                        <u><p class="password">Esqueceu a senha?</p></u>
+                        <!--BOTÃO DE ENTRAR-->
+                        <button type="submit" class="btn btn-primary">Entrar</button>
+                        <br>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    </main>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>
