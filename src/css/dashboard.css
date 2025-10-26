@@ -1,0 +1,105 @@
+/*estilização header*/
+.navbar{
+    background-color: #840705;
+    padding: 10px;
+    align-items: center;
+    color: white;
+}
+.name_header{
+    font-weight: bold;
+}
+
+.user_name{
+    font-weight: bold;
+}
+
+/*Estilização sidebar*/
+.sistem {
+    display: flex;    
+    align-items: center; 
+    gap: 5px;
+    color: white;
+    padding: auto;
+}
+
+.sistem {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: white;
+    padding: 10px 15px;
+}
+
+/*O botão*/
+.sistem #open_btn {
+    flex-shrink: 0;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+/* O h2 em si */
+.sistem h2.first_name {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    margin: 0;
+}
+
+/* O span dentro do h2 */
+.sistem span.second_name {
+    align-items: center;
+}
+
+/* Estilizando o botão*/
+.sistem #open_btn {
+    padding: 0;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.first_name {
+    color: greenyellow;
+}
+
+.second_name{
+    position: static;
+    color: aqua;
+}
+
+.side_bar{
+    width: 300px;
+    background-color: #120639;
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 0;
+    position: relative;
+}
+
+/*estilização dos items*/
+.side_item{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 1px;
+}
+
+.side_item a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: white;
+    font-size: 1.4rem;
+}
+
+.side_items{
+    color: white;
+}
