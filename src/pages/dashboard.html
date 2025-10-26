@@ -14,27 +14,21 @@
 
 <body>
     <!-- CABEÇALHO -->
-    <header class="navbar">
+    <header class="header">
         <div class="name_header">
             <!--Estilização do header-->
             SGI - PrestContas | Sistema de Gestão Integrada
         </div>
-        <div>
+        <div class="saudacao">
             Seja bem-vindo <span class="user_name">Tio Patinhas</span>, hoje é 17 de outubro de 2025
         </div>
     </header>
 
-    <nav>
-        <button>Prestação de Contas</button>
-        <button>Gestão Patrimonial</button>
-        <button>Gestão de Frota</button>
-        <button>Pesquisa</button>
-        <button>Gestão de Documentos</button>
-        <button>Ajuda</button>
-        <button>Sair</button>
-    </nav>
-
+    
+    <!--AREA DE CONTEUDO E SIDEBAR-->
+    <main class="main_content d-flex">
     <!-- MENU LATERAL -->
+     
     <aside class="side_bar">
         <nav id="side_content"> 
             <div class="sistem">
@@ -87,15 +81,33 @@
             </ul>
         </nav>
     </aside>
-  
+    <!-- sessão principal dashboard -->
+    <section>
+
+        <!-- MENU SUPERIOR -->
+
+            <nav class ="menu_superior">
+                <button>Prestação de Contas</button>
+                <button>Gestão Patrimonial</button>
+                <button>Gestão de Frota</button>
+                <button>Pesquisa</button>
+                <button>Gestão de Documentos</button>
+                <button>Ajuda</button>
+                <button>Sair</button>
+            </nav>
+
         <!-- CONTEÚDO PRINCIPAL -->
         <section class="conteudo_principal container">
             <h1 class="titulo_pagina">Criar Plano de Trabalho</h1>
 
+        
+        
             <!-- DADOS DO INSTRUMENTO -->
             <section class="dados_do_instrumento_header">
                 <h4>Dados do Instrumento</h4>
             </section>
+            
+
 
             <section class="card dados_do_instrumento">
                 <article class="card-body">
@@ -169,12 +181,15 @@
                 </article>
             </section>
         </section>
-
-        <!-- RODAPÉ -->
+    
+    <!-- RODAPÉ -->
         <footer class="rodape">
             <p>&copy; 2025 PrestContas&reg;</p>
         </footer>
+    </section>
     </main>
+        
+    
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
     <script src="src/js/main.js"></script>

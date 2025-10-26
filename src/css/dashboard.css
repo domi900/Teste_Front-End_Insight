@@ -1,5 +1,5 @@
 /*estilização header*/
-.navbar{
+.header{
     background-color: #840705;
     padding: 10px;
     align-items: center;
@@ -7,6 +7,13 @@
 }
 .name_header{
     font-weight: bold;
+}
+
+.saudacao{
+    text-align: right;
+    font-size: 0.9rem;
+    margin-top: -25px;
+    align-items: right;
 }
 
 .user_name{
@@ -158,6 +165,7 @@
 /* ======== CONTEÚDO PRINCIPAL ======== */
 .conteudo_principal {
     margin-top: 30px;
+    margin-bottom: 50px;
 }
 
 .titulo_pagina {
@@ -262,6 +270,5 @@
     background-color: #212529;
     color: #f8f9fa;
     text-align: left;
-    padding: 10px 0;
-    margin-top: 40px;
+    padding: 10px;
 }
