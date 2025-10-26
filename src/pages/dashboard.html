@@ -2,77 +2,92 @@
 <html lang="pt-BR">
 
 <head>
-    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SGI PrestContas</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/dashboard.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
+<body>
+    <!-- CABEÇALHO -->
+    <header class="navbar">
+        <div class="name_header">
+            <!--Estilização do header-->
+            SGI - PrestContas | Sistema de Gestão Integrada
+        </div>
+        <div>
+            Seja bem-vindo <span class="user_name">Tio Patinhas</span>, hoje é 17 de outubro de 2025
+        </div>
+    </header>
 
-<body class="bg-light">
+    <nav>
+        <button>Prestação de Contas</button>
+        <button>Gestão Patrimonial</button>
+        <button>Gestão de Frota</button>
+        <button>Pesquisa</button>
+        <button>Gestão de Documentos</button>
+        <button>Ajuda</button>
+        <button>Sair</button>
+    </nav>
 
-    <div class="container-fluid">
-        <div class="row">
+    <!-- MENU LATERAL -->
+    <aside class="side_bar">
+        <nav id="side_content"> 
+            <div class="sistem">
+                <button id="open_btn">
+                    <i id="open_btn_icon" class="fa-solid fa-bars"></i>
+                </button> <h2 class="first_name">SiS <span class="second_name">CONVÊNIOS</span></h2>
+            </div>
 
-            <!-- MENU LATERAL -->
-            <aside class="col-md-2 col-lg-2 bg-primary text-white min-vh-100 p-3">
-                <h2 class="fs-4 text-center mb-4">SiS <span class="text-warning">CONVÊNIOS</span></h2>
-                <nav>
-                    <ul class="list-unstyled">
-                        <li><a href="#" class="text-white text-decoration-none d-block py-1">Usuário</a></li>
-                        <li><a href="#" class="text-white text-decoration-none d-block py-1">Instrumentos</a></li>
-                        <li class="mt-2">
-                            <a href="#" class="text-white text-decoration-none d-block">Plano de Trabalho</a>
-                            <ul class="list-unstyled ms-3">
-                                <li><a href="#" class="text-white-50 text-decoration-none d-block py-1">Criar</a></li>
-                                <li><a href="#" class="text-white-50 text-decoration-none d-block py-1">Aditivo de
-                                        prazo</a></li>
-                                <li><a href="#" class="text-white-50 text-decoration-none d-block py-1">Aditivo de
-                                        valor</a></li>
-                            </ul>
-                        </li>
-                        <li class="mt-2">
-                            <a href="#" class="text-white text-decoration-none d-block">Execução</a>
-                            <ul class="list-unstyled ms-3">
-                                <li><a href="#" class="text-white-50 text-decoration-none d-block py-1">Processos</a>
-                                </li>
-                                <li><a href="#" class="text-white-50 text-decoration-none d-block py-1">Protocolos</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li><a href="#" class="text-white text-decoration-none d-block py-1 mt-2">Ajuda</a></li>
-                        <li><a href="#" class="text-white text-decoration-none d-block py-1">Sair</a></li>
-                    </ul>
-                </nav>
-            </aside>
+            <ul class="side_item">
+                <li class="side_items">
+                    <a href="#">
+                        <i class="fa-solid fa-user"></i>
+                        <span class="item_descripition">Usuário</span>
+                    </a>
+                    <br>
+                    <a href="#">
+                        <i class="fa-solid fa-file"></i>
+                        <span class="item_descripition">Instrumentos</span>
+                    </a>
+                    <br>
+                    <a href="#">
+                        <i class="fa-solid fa-chart-simple"></i>
+                        <span class="item_descripition">Plano de Trabalho</span>
+                        <ul>
+                            <li><a href="#">Criar</a></li>
+                            <li><a href="#">Aditivo de prazo</a></li>
+                            <li><a href="#">Aditivo de valor</a></li>
+                        </ul>
+                    </a>
 
-            <!-- ÁREA PRINCIPAL -->
-            <main class="col-md-10 col-lg-10 p-0">
+                    <a href="#">
+                        <i class="fa-solid fa-arrow-rotate-right"></i>
+                        <span class="item_descripition">Execução</span>
+                        <ul>
+                            <li><a href="#">Processos</a></li>
+                            <li><a href="#">Protocolos</a></li>
+                        </ul>
+                    </a>
 
-                <!-- CABEÇALHO -->
-        <header class="cabecalho_superior">
-            <section>
-                <h2>SGI - PrestContas</h2> | Sistema de Gestão Integrada
-            </section>
-            <section>
-                Seja bem-vindo <h3>Tio Patinhas</h3>, hoje é 17 de outubro de 2025
-            </section>
-        </header>
-
-        <!-- MENU SUPERIOR -->
-        <nav class="menu_superior">
-            <button class="menu_btn ativo">Prestação de Contas</button>
-            <button class="menu_btn">Gestão Patrimonial</button>
-            <button class="menu_btn">Gestão de Frota</button>
-            <button class="menu_btn">Pesquisa</button>
-            <button class="menu_btn">Gestão de Documentos</button>
-            <button class="menu_btn">Ajuda</button>
-            <button class="menu_btn sair">Sair</button>
+                    <a href="#">
+                        <i class="fa-solid fa-circle-question"></i>
+                        <span class="item_descripition">Ajuda</span>
+                    </a>
+                    <br>
+                    <a href="#">
+                        <i class="fa-solid fa-door-open"></i>
+                        <span class="item_descripition">Sair</span>
+                    </a>
+                </li>
+            </ul>
         </nav>
-
+    </aside>
+  
         <!-- CONTEÚDO PRINCIPAL -->
         <section class="conteudo_principal container">
             <h1 class="titulo_pagina">Criar Plano de Trabalho</h1>
@@ -162,6 +177,6 @@
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="Teste_Front-End_Insight/src/js/main.js"></script>
+    <script src="src/js/main.js"></script>
 </body>
 </html>
