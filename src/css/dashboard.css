@@ -103,3 +103,165 @@
 .side_items{
     color: white;
 }
+/* ======== ÁREA PRINCIPAL ======== */
+.main_area {
+    width: 100%;
+    padding: 0;
+}
+
+/* ======== CABEÇALHO ======== */
+.cabecalho_superior {
+    background-color: #dc3545; /* vermelho Bootstrap danger */
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* ======== MENU SUPERIOR ======== */
+.menu_superior {
+    background-color: #f8f9fa; /* light */
+    border-bottom: 1px solid #dee2e6;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+}
+
+.menu_btn {
+    border: 1px solid #6c757d;
+    color: #6c757d;
+    background-color: #fff;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.menu_btn:hover {
+    background-color: #e9ecef;
+}
+
+.menu_btn.ativo {
+    background-color: #dc3545;
+    border-color: #dc3545;
+    color: #fff;
+}
+
+.menu_btn.sair {
+    border-color: #6c757d;
+}
+
+/* ======== CONTEÚDO PRINCIPAL ======== */
+.conteudo_principal {
+    margin-top: 30px;
+}
+
+.titulo_pagina {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+/* ======== DADOS DO INSTRUMENTO ======== */
+.dados_do_instrumento_header {
+    background-color: #dc3545;
+    color: #fff;
+    max-width: 300px;
+    margin-bottom: 3px;
+    margin-left: 20px;
+    border-radius: 0px;
+    padding: 10px;
+    text-align: center;
+    width: fit-content;
+}
+
+.dados_do_instrumento {
+    margin-bottom: 25px;
+}
+
+.linha {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.col_texto {
+    flex: 3;
+}
+
+.col_info {
+    flex: 1;
+}
+
+/* ======== BOTÕES ======== */
+.botoes_acoes {
+    text-align: end;
+    margin-bottom: 15px;
+}
+
+.btn_adicionar {
+    background-color: #0d6efd;
+    color: #fff;
+    border: none;
+    padding: 6px 12px;
+    font-size: 0.9rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn-adicionar:hover {
+    background-color: #0b5ed7;
+}
+
+/* ======== TABELA ======== */
+.tabela {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tabela th, .tabela td {
+    border: 1px solid #dee2e6;
+    padding: 8px;
+    text-align: left;
+}
+
+.tabela thead {
+    background-color: #f8f9fa;
+    font-weight: bold;
+}
+
+.tabela tr:hover {
+    background-color: #f1f3f5;
+}
+
+.acao_editar {
+    background-color: #198754;
+    color: #fff;
+    border: none;
+    padding: 3px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.acao_excluir {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 3px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* ======== RODAPÉ ======== */
+.rodape {
+    background-color: #212529;
+    color: #f8f9fa;
+    text-align: left;
+    padding: 10px 0;
+    margin-top: 40px;
+}
