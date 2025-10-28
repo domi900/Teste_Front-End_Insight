@@ -25,6 +25,8 @@ h4, h3, h2, h1{
     font-size: 1rem;
 }
 
+
+
 /*estilização header*/
 .header{
     background-color: #840705;
@@ -153,14 +155,7 @@ h4, h3, h2, h1{
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-}
 
-@media screen and (max-width: 990px) {
-    header{
-        font-size: 60%;
-    }
-
-    
 }
 
 /* ======== MENU SUPERIOR ======== */
@@ -171,16 +166,7 @@ h4, h3, h2, h1{
     display: flex;
     justify-content: flex-end;
     gap: 5px;
-}
 
-@media screen and (max-width: 990px){ 
-    .menu_superior{
-        flex-direction: column;
-    }
-
-    html{
-        font-size: 1rem;
-    }
 }
 
 .menu_btn {
@@ -333,4 +319,17 @@ h4, h3, h2, h1{
     color: #f8f9fa;
     text-align: left;
     padding: 10px;
+}
+
+@media screen and (max-width: 990px) {
+    header{
+        font-size: 60%;
+    }
+    .menu_superior{
+        flex-direction: column;
+    }
+
+    html{
+        font-size: 1rem;
+    }
 }
