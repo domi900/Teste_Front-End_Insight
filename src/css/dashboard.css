@@ -1,3 +1,26 @@
+:root {
+  /* Cores principais */
+  --cor-header: #840705;
+  --cor-fundo-login: #FFDAD8;
+  --cor-sidebar: #120639;
+
+  /* Cores de botões */
+  --cor-botao-principal: #840705;
+  --cor-botao-hover: #a01910;
+  --cor-botao-texto: #ffffff;
+
+  /* Cores de texto e fundo */
+  --cor-texto-primario: #1a1a1a;
+  --cor-texto-secundario: #555555;
+  --cor-fundo-padrao: #f8f9fa;
+
+  /* Tipografia */
+  --fonte-principal: "Poppins", sans-serif;
+  --tamanho-base: 16px;
+  --tamanho-titulo: 1.5rem;
+  --tamanho-subtitulo: 1.2rem;
+}
+
 /*estilização header*/
 .header{
     background-color: #840705;
