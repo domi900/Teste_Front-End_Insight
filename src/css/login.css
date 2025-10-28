@@ -27,7 +27,7 @@ main{ /*CENTRALIZAR CONTAINER PRINCIPAL VERTICALMENTE*/
 }
 
 body{ /*COR DE FUNDO*/
-    background-color: #ffdad8; 
+    background-color: var(--cor-fundo-login); 
 }
 
 button { /*ESTILIZAÇÃO DO BOTÃO*/
