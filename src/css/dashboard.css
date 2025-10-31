@@ -250,6 +250,10 @@
 }
 
 /* ======== TABELA ======== */
+div#container_tabela{
+    overflow-x: auto;
+}
+
 .tabela {
     width: 100%;
     border-collapse: collapse;
