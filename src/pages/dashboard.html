@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>SGI PrestContas</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/dashboard.css">
@@ -14,7 +14,7 @@
 
 <body>
     <!-- CABEÇALHO -->
-    <header class="header">
+    <header class="header" style="width: 100%;">
         <div class="name_header">
             <!--Estilização do header-->
             SGI - PrestContas | Sistema de Gestão Integrada
@@ -26,7 +26,8 @@
 
     
     <!--AREA DE CONTEUDO E SIDEBAR-->
-    <main class="main_content" style="display: grid; min-height: 100vh;">
+    <main class="main_content d-flex"">
+                                      
     <!-- MENU LATERAL -->
      
     <aside class="side_bar" style="flex-shrink: 0;">
@@ -82,18 +83,18 @@
         </nav>
     </aside>
     <!-- sessão principal dashboard -->
-    <section>
+    <section style="width: 100%;">
 
         <!-- MENU SUPERIOR -->
 
             <nav class ="menu_superior">
-                <button type="button" class="btn btn-primary btn-sm">Prestação de Contas</button>
-                <button type="button" class="btn btn-primary btn-sm">Gestão Patrimonial</button>
-                <button type="button" class="btn btn-primary btn-sm">Gestão de Frota</button>
-                <button type="button" class="btn btn-primary btn-sm">Pesquisa</button>
-                <button type="button" class="btn btn-primary btn-sm">Gestão de Documentos</button>
-                <button type="button" class="btn btn-primary btn-sm">Ajuda</button>
-                <button type="button" class="btn btn-primary btn-sm">Sair</button>
+                <button>Prestação de Contas</button>
+                <button>Gestão Patrimonial</button>
+                <button>Gestão de Frota</button>
+                <button>Pesquisa</button>
+                <button>Gestão de Documentos</button>
+                <button>Ajuda</button>
+                <button>Sair</button>
             </nav>
 
         <!-- CONTEÚDO PRINCIPAL -->
@@ -194,6 +195,6 @@
     
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="src/js/main.js"></script>
+    <script type="module" src="src/js/main_dashboard.js"></script>
 </body>
 </html>
