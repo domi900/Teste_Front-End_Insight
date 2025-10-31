@@ -21,17 +21,12 @@
   --tamanho-subtitulo: 1.2rem;
 }
 
-h4, h3, h2, h1{
-    font-size: 1rem;
-}
-
 /*estilização header*/
 .header{
-    background-color: #840705;
+    background-color: var(--cor-header);
     padding: 10px;
     align-items: center;
-    color: white;
-    
+    color: var(--cor-botao-texto);
 }
 .name_header{
     font-weight: bold;
@@ -53,7 +48,7 @@ h4, h3, h2, h1{
     display: flex;    
     align-items: center; 
     gap: 5px;
-    color: white;
+    color: var(--cor-botao-texto);
     padding: auto;
 }
 
@@ -61,7 +56,7 @@ h4, h3, h2, h1{
     display: flex;
     align-items: center;
     gap: 1rem;
-    color: white;
+    color: var(--cor-botao-texto);
     padding: 10px 15px;
 }
 
@@ -70,7 +65,7 @@ h4, h3, h2, h1{
     flex-shrink: 0;
     background: none;
     border: none;
-    color: white;
+    color: var(--cor-botao-texto);
     font-size: 1.2rem;
     cursor: pointer;
 }
@@ -95,7 +90,7 @@ h4, h3, h2, h1{
     font-size: 2rem;
     background: none;
     border: none;
-    color: white;
+    color: var(--cor-botao-texto);
     cursor: pointer;
 }
 
@@ -109,8 +104,8 @@ h4, h3, h2, h1{
 }
 
 .side_bar{
-    width: 220px;
-    background-color: #120639;
+    width: 300px;
+    background-color: var(--cor-sidebar);
     display: flex; 
     flex-direction: column;
     justify-content: space-between;
@@ -131,12 +126,12 @@ h4, h3, h2, h1{
     display: flex;
     align-items: center;
     gap: 5px;
-    color: white;
-    font-size: 1rem;
+    color: var(--cor-botao-texto);
+    font-size: 1.4rem;
 }
 
 .side_items{
-    color: white;
+    color: var(--cor-botao-texto);
 }
 /* ======== ÁREA PRINCIPAL ======== */
 .main_area {
@@ -146,25 +141,23 @@ h4, h3, h2, h1{
 
 /* ======== CABEÇALHO ======== */
 .cabecalho_superior {
-    background-color: #dc3545; /* vermelho Bootstrap danger */
-    color: #fff;
-    padding: 20px 20px;
+    background-color: var(--cor-header);/*#dc3545;*/
+    color: var(--cor-botao-texto); /*#fff;*/
+    padding: 10px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-
 }
 
 /* ======== MENU SUPERIOR ======== */
 .menu_superior {
-    background-color: #f8f9fa; 
+    background-color: var(--cor-fundo-padrao);/*#f8f9fa;*/
     border-bottom: 1px solid #dee2e6;
     padding: 10px 15px;
     display: flex;
     justify-content: flex-end;
-    gap: 5px;
-
+    gap: 8px;
 }
 
 .menu_btn {
@@ -236,22 +229,6 @@ h4, h3, h2, h1{
 }
 
 /* ======== BOTÕES ======== */
-.btn-primary{
-    background-color: #F0F0F0;
-    border-color: black;
-    color: black;
-    border-width: 2px;
-    font-size: small;
-    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.2);
-}
-
-
-.btn:hover{
-    background-color: #6C757D;
-    border-color: black;
-}
-
-
 .botoes_acoes {
     text-align: end;
     margin-bottom: 15px;
@@ -323,15 +300,101 @@ div#container_tabela{
     padding: 10px;
 }
 
-@media screen and (max-width: 990px) {
-    header{
-        font-size: 60%;
+/* Responsividade */
+@media screen and (max-width: 1200px) {
+    .side_bar {
+        width: 250px;
     }
-    .menu_superior{
+
+    .tabela {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .main_content {
         flex-direction: column;
     }
 
-    html{
-        font-size: 1rem;
+    .side_bar {
+        width: 100%;
+        position: static;
+    }
+
+    .menu_superior {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .menu_superior button {
+        margin: 5px;
+    }
+
+    .dados_do_instrumento .linha {
+        flex-direction: column;
+    }
+
+    .col_texto, .col_info {
+        flex: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .saudacao {
+        text-align: left;
+        margin-top: 10px;
+    }
+
+    .tabela {
+        display: block;
+        overflow-x: auto;
+    }
+
+    .dados_do_instrumento_header {
+        margin-left: 0;
+        max-width: 100%;
+    }
+
+    .linha {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .header {
+        text-align: center;
+    }
+
+    .name_header {
+        font-size: 1.2rem;
+    }
+
+    .sistem h2.first_name {
+        font-size: 1.2rem;
+    }
+
+    .side_item a {
+        font-size: 1.1rem;
+    }
+
+    .botoes_acoes {
+        text-align: center;
+    }
+}
+
+/* Ajustes para melhor visualização em dispositivos móveis */
+@media screen and (max-width: 480px) {
+    .dados_do_instrumento {
+        padding: 10px;
+    }
+
+    .tabela th, .tabela td {
+        padding: 5px;
+        font-size: 12px;
+    }
+
+    .menu_superior button {
+        width: 100%;
+        margin: 2px 0;
     }
 }
