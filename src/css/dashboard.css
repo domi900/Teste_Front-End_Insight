@@ -13,6 +13,8 @@
   --cor-texto-primario: #1a1a1a;
   --cor-texto-secundario: #555555;
   --cor-fundo-padrao: #f8f9fa;
+  --cor-fundo-sis: greenyellow;
+  --cor-fundo-conv: aqua;
 
   /* Tipografia */
   --fonte-principal: "Poppins", sans-serif;
@@ -51,15 +53,7 @@ body{
     font-weight: bold;
 }
 
-/*Estilização sidebar*/
-.sistem {
-    display: flex;    
-    align-items: center; 
-    gap: 5px;
-    color: var(--cor-botao-texto);
-    padding: auto;
-}
-
+/*Estilização sidebar: */
 .sistem {
     display: flex;
     align-items: center;
@@ -68,79 +62,86 @@ body{
     padding: 10px 15px;
 }
 
-/*O botão*/
-.sistem #open_btn {
-    flex-shrink: 0;
-    background: none;
-    border: none;
-    color: var(--cor-botao-texto);
-    font-size: 1.2rem;
-    cursor: pointer;
-}
-
 /* O h2 em si */
-.sistem h2.first_name {
+.sistem p.first_name {
     flex-grow: 1;
     display: flex;
     justify-content: space-between; 
     align-items: center; 
     margin: 0;
+    font-size: xx-large;
+    color: var(--cor-fundo-sis);
 }
 
 /* O span dentro do h2 */
 .sistem span.second_name {
-    align-items: center;
+    align-items: flex-start;
+    font-size: xx-large;
+    color: var(--cor-fundo-conv);
 }
 
 /* Estilizando o botão*/
 .sistem #open_btn {
     padding: 0;
-    font-size: 2rem;
+    align-content: flex-start;
+    font-size: 2.1rem;
     background: none;
     border: none;
     color: var(--cor-botao-texto);
     cursor: pointer;
 }
 
-.first_name {
-    color: greenyellow;
-}
-
-.second_name{
-    position: static;
-    color: aqua;
-}
-
-.side_bar{
-    width: 300px;
+.side_bar {
     background-color: var(--cor-sidebar);
-    display: flex; 
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 20px 0;
     position: relative;
+    width: 59px;
+    overflow: hidden;
+    transition: 0.3s ease-in-out; /*Anima a largura da sidebar */
+    list-style: none;
 }
 
 /*estilização dos items*/
-.side_item{
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-    gap: 1px;
-}
-
 .side_item a {
     text-decoration: none;
+    list-style: none;
     display: flex;
     align-items: center;
-    gap: 5px;
     color: var(--cor-botao-texto);
     font-size: 1.4rem;
+    opacity: 0;/* Faz o item ícone + texto ficar invisível */
+    visibility: hidden;
 }
 
-.side_items{
-    color: var(--cor-botao-texto);
+/*Para remover os icones de lista*/
+ul{
+    list-style: none;
 }
+
+/* Sidebar aberto*/
+.side_bar.open .side_item a {
+    opacity: 1; /* Traz os itens de volta os itens*/
+    visibility: visible;
+    transition-delay: 0.2s; /* Delay para esperar a sidebar abrir um pouco */
+    justify-content: flex-start;
+    gap: 15px;
+    padding-left: 15px;
+}
+
+/*Para ocultar os item quando a side estiver fechada*/
+.side_item-description {
+    width: 0px;/*O texto fica com largura zero */
+    overflow: hidden; /*O que vaza de texto e cortado */
+    white-space: nowrap;
+    transition: width 0.3s ease-in-out;
+}
+
+.side_bar.open{
+    width: 300px;
+}
+
 /* ======== ÁREA PRINCIPAL ======== */
 .main_area {
     width: 100%;
