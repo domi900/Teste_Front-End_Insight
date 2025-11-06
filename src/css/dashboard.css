@@ -1,65 +1,53 @@
 :root {
-  /* Cores principais */
-  --cor-header: #840705;
-  --cor-fundo-login: #FFDAD8;
-  --cor-sidebar: #120639;
+    /* Cores principais */
+    --cor-header: #840705;
+    --cor-fundo-login: #FFDAD8;
+    --cor-sidebar: #120639;
 
-  /* Cores de botões */
-  --cor-botao-principal: #840705;
-  --cor-botao-hover: #a01910;
-  --cor-botao-texto: #ffffff;
+    /* Cores de botões */
+    --cor-botao-principal: #840705;
+    --cor-botao-hover: #a01910;
+    --cor-botao-texto: #ffffff;
 
-  /* Cores de texto e fundo */
-  --cor-texto-primario: #1a1a1a;
-  --cor-texto-secundario: #555555;
-  --cor-fundo-padrao: #f8f9fa;
+    /* Cores de texto e fundo */
+    --cor-texto-primario: #1a1a1a;
+    --cor-texto-secundario: #555555;
+    --cor-fundo-padrao: #f8f9fa;
 
-  /* Tipografia */
-  --fonte-principal: "Poppins", sans-serif;
-  --tamanho-base: 16px;
-  --tamanho-titulo: 1.5rem;
-  --tamanho-subtitulo: 1.2rem;
+    /* Tipografia */
+    --fonte-principal: "Poppins", sans-serif;
+    --tamanho-base: 16px;
+    --tamanho-titulo: 1.5rem;
+    --tamanho-subtitulo: 1.2rem;
 }
 
-h4, h3, h2, h1{
+h4, h3, h2, h1 {
     font-size: 1rem;
 }
 
-body{
+body {
     overflow-x: hidden;
 }
 
 /*estilização header*/
-.header{
+.header {
     background-color: var(--cor-header);
     padding: 10px;
     align-items: center;
     color: var(--cor-botao-texto);
 }
-.name_header{
+.name_header {
     font-weight: bold;
 }
 
-.saudacao{
+.saudacao {
     text-align: right;
     font-size: 0.9rem;
     margin-top: -25px;
     align-items: right;
 }
 
-.user_name{
-    font-weight: bold;
-}
-
 /*Estilização sidebar*/
-.sistem {
-    display: flex;    
-    align-items: center; 
-    gap: 5px;
-    color: var(--cor-botao-texto);
-    padding: auto;
-}
-
 .sistem {
     display: flex;
     align-items: center;
@@ -67,32 +55,6 @@ body{
     color: var(--cor-botao-texto);
     padding: 10px 15px;
 }
-
-/*O botão*/
-.sistem #open_btn {
-    flex-shrink: 0;
-    background: none;
-    border: none;
-    color: var(--cor-botao-texto);
-    font-size: 1.2rem;
-    cursor: pointer;
-}
-
-/* O h2 em si */
-.sistem h2.first_name {
-    flex-grow: 1;
-    display: flex;
-    justify-content: space-between; 
-    align-items: center; 
-    margin: 0;
-}
-
-/* O span dentro do h2 */
-.sistem span.second_name {
-    align-items: center;
-}
-
-/* Estilizando o botão*/
 .sistem #open_btn {
     padding: 0;
     font-size: 2rem;
@@ -101,20 +63,14 @@ body{
     color: var(--cor-botao-texto);
     cursor: pointer;
 }
-
 .first_name {
     color: greenyellow;
 }
 
-.second_name{
-    position: static;
-    color: aqua;
-}
-
-.side_bar{
+.side_bar {
     width: 300px;
     background-color: var(--cor-sidebar);
-    display: flex; 
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: 20px 0;
@@ -122,45 +78,48 @@ body{
 }
 
 /*estilização dos items*/
-.side_item{
+.side_item {
     display: flex;
     flex-direction: column;
     list-style: none;
     gap: 1px;
+    padding: 0;
+    margin: 0;
 }
-
 .side_item a {
     text-decoration: none;
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 10px;
     color: var(--cor-botao-texto);
-    font-size: 1.4rem;
+    font-size: 1.1rem;
+    padding: 10px 15px;
+    transition: background-color 0.2s, border-left 0.2s;
 }
 
-.side_items{
-    color: var(--cor-botao-texto);
+/* ESTILO PARA O ITEM DE MENU LATERAL ATIVO */
+.side_item a.active {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-left: 5px solid #ffc107;
+    padding-left: 10px;
 }
-/* ======== ÁREA PRINCIPAL ======== */
-.main_area {
-    width: 100%;
-    padding: 0;
+.side_item a:hover:not(.active) {
+    background-color: rgba(255, 255, 255, 0.05);
 }
 
-/* ======== CABEÇALHO ======== */
-.cabecalho_superior {
-    background-color: var(--cor-header);/*#dc3545;*/
-    color: var(--cor-botao-texto); /*#fff;*/
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+.side_item ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 5px 0;
+}
+.side_item ul a {
+    padding: 5px 15px 5px 35px;
+    font-size: 1rem;
 }
 
 /* ======== MENU SUPERIOR ======== */
 .menu_superior {
-    background-color: var(--cor-fundo-padrao);/*#f8f9fa;*/
+    background-color: var(--cor-fundo-padrao);
     border-bottom: 1px solid #dee2e6;
     padding: 10px 15px;
     display: flex;
@@ -168,7 +127,7 @@ body{
     gap: 8px;
 }
 
-.menu_btn {
+.menu_superior button {
     border: 1px solid #6c757d;
     color: #6c757d;
     background-color: #fff;
@@ -179,18 +138,16 @@ body{
     transition: all 0.2s;
 }
 
-.menu_btn:hover {
+/* ESTILO PARA O ITEM DE MENU SUPERIOR ATIVO */
+.menu_superior button.active-superior {
+    background-color: var(--cor-botao-principal);
+    border-color: var(--cor-botao-principal);
+    color: var(--cor-botao-texto);
+    font-weight: bold;
+}
+
+.menu_superior button:hover:not(.active-superior) {
     background-color: #e9ecef;
-}
-
-.menu_btn.ativo {
-    background-color: #dc3545;
-    border-color: #dc3545;
-    color: #fff;
-}
-
-.menu_btn.sair {
-    border-color: #6c757d;
 }
 
 /* ======== CONTEÚDO PRINCIPAL ======== */
@@ -204,7 +161,23 @@ body{
     margin-bottom: 20px;
 }
 
-/* ======== DADOS DO INSTRUMENTO ======== */
+/* ESTILOS DA TELA HOME */
+.home-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh;
+}
+
+.logo-home {
+    max-width: 600px;
+    width: 80%;
+    margin: 50px 0;
+}
+
+
+/* DADOS DO INSTRUMENTO */
 .dados_do_instrumento_header {
     background-color: #dc3545;
     color: #fff;
@@ -253,12 +226,8 @@ body{
     transition: background-color 0.2s;
 }
 
-.btn-adicionar:hover {
-    background-color: #0b5ed7;
-}
-
 /* ======== TABELA ======== */
-div#container_tabela{
+div#container_tabela {
     overflow-x: auto;
 }
 
@@ -267,7 +236,8 @@ div#container_tabela{
     border-collapse: collapse;
 }
 
-.tabela th, .tabela td {
+.tabela th,
+.tabela td {
     border: 1px solid #dee2e6;
     padding: 8px;
     text-align: left;
@@ -276,10 +246,6 @@ div#container_tabela{
 .tabela thead {
     background-color: #f8f9fa;
     font-weight: bold;
-}
-
-.tabela tr:hover {
-    background-color: #f1f3f5;
 }
 
 .acao_editar {
@@ -309,16 +275,6 @@ div#container_tabela{
 }
 
 /* Responsividade */
-@media screen and (max-width: 1200px) {
-    .side_bar {
-        width: 250px;
-    }
-
-    .tabela {
-        font-size: 14px;
-    }
-}
-
 @media screen and (max-width: 992px) {
     .main_content {
         flex-direction: column;
@@ -333,81 +289,4 @@ div#container_tabela{
         flex-wrap: wrap;
         justify-content: center;
     }
-
-    .menu_superior button {
-        margin: 5px;
-    }
-
-    .dados_do_instrumento .linha {
-        flex-direction: column;
-    }
-
-    .col_texto, .col_info {
-        flex: 100%;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .saudacao {
-        text-align: left;
-        margin-top: 10px;
-    }
-
-    .tabela {
-        display: block;
-        overflow-x: auto;
-    }
-
-    .dados_do_instrumento_header {
-        margin-left: 0;
-        max-width: 100%;
-    }
-
-    .linha {
-        flex-direction: column;
-    }
-}
-
-@media screen and (max-width: 576px) {
-    .header {
-        text-align: center;
-    }
-
-    .name_header {
-        font-size: 1.2rem;
-    }
-
-    .sistem h2.first_name {
-        font-size: 1.2rem;
-    }
-
-    .side_item a {
-        font-size: 1.1rem;
-    }
-
-    .botoes_acoes {
-        text-align: center;
-    }
-}
-
-/* Ajustes para melhor visualização em dispositivos móveis */
-@media screen and (max-width: 480px) {
-    .dados_do_instrumento {
-        padding: 10px;
-    }
-
-    .tabela th, .tabela td {
-        padding: 5px;
-        font-size: 12px;
-    }
-
-    .menu_superior button {
-        width: 100%;
-        margin: 2px 0;
-    }
-
-    main{
-        
-    }
-    
 }

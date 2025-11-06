@@ -7,16 +7,14 @@
     <title>SGI PrestContas</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/dashboard.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKx3c1pIq8w+o/R99uI44v/zT+Vw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-    <!-- CABEÇALHO -->
     <header class="header" style="width: 100%;">
         <div class="name_header">
-            <!--Estilização do header-->
             SGI - PrestContas | Sistema de Gestão Integrada
         </div>
         <div class="saudacao">
@@ -24,177 +22,234 @@
         </div>
     </header>
 
-    
-    <!--AREA DE CONTEUDO E SIDEBAR-->
-    <main class="main_content d-flex"">
-                                      
-    <!-- MENU LATERAL -->
-     
-    <aside class="side_bar" style="flex-shrink: 0;">
-        <nav id="side_content"> 
-            <div class="sistem">
-                <button id="open_btn">
-                    <i id="open_btn_icon" class="fa-solid fa-bars"></i>
-                </button> <h2 class="first_name">SiS <span class="second_name">CONVÊNIOS</span></h2>
-            </div>
+    <main class="main_content d-flex">
 
-            <ul class="side_item">
-                <li class="side_items">
-                    <a href="#">
-                        <i class="fa-solid fa-user"></i>
-                        <span class="item_descripition">Usuário</span>
-                    </a>
-                    <br>
-                    <a href="#">
-                        <i class="fa-solid fa-file"></i>
-                        <span class="item_descripition">Instrumentos</span>
-                    </a>
-                    <br>
-                    <a href="#">
-                        <i class="fa-solid fa-chart-simple"></i>
-                        <span class="item_descripition">Plano de Trabalho</span>
-                        <ul>
-                            <li><a href="#">Criar</a></li>
-                            <li><a href="#">Aditivo de prazo</a></li>
-                            <li><a href="#">Aditivo de valor</a></li>
-                        </ul>
-                    </a>
+        <aside class="side_bar" style="flex-shrink: 0;">
+            <nav id="side_content">
+                <div class="sistem">
+                    <button id="open_btn">
+                        <i id="open_btn_icon" class="fa-solid fa-bars"></i>
+                    </button>
+                    <h2 class="first_name">SiS <span class="second_name">CONVÊNIOS</span></h2>
+                </div>
 
-                    <a href="#">
-                        <i class="fa-solid fa-arrow-rotate-right"></i>
-                        <span class="item_descripition">Execução</span>
-                        <ul>
-                            <li><a href="#">Processos</a></li>
-                            <li><a href="#">Protocolos</a></li>
-                        </ul>
-                    </a>
+                <ul class="side_item">
+                    <li class="side_items">
+                        <a href="#" class="menu-item" data-secao="secaoUsuario">
+                            <i class="fa-solid fa-user"></i>
+                            <span class="item_descripition">Usuário</span>
+                        </a>
+                        <br>
+                        <a href="#" class="menu-item" data-secao="secaoInstrumentos">
+                            <i class="fa-solid fa-file"></i>
+                            <span class="item_descripition">Instrumentos</span>
+                        </a>
+                        <br>
+                        <a href="#" class="menu-item" data-secao="secaoPlanoTrabalhoCriar">
+                            <i class="fa-solid fa-chart-simple"></i>
+                            <span class="item_descripition">Plano de Trabalho</span>
+                            <ul>
+                                <li><a href="#" class="menu-item" data-secao="secaoPlanoTrabalhoCriar">Criar</a></li>
+                                <li><a href="#" class="menu-item" data-secao="secaoPlanoTrabalhoAditivoPrazo">Aditivo de
+                                        prazo</a></li>
+                                <li><a href="#" class="menu-item" data-secao="secaoPlanoTrabalhoAditivoValor">Aditivo de
+                                        valor</a></li>
+                            </ul>
+                        </a>
 
-                    <a href="#">
-                        <i class="fa-solid fa-circle-question"></i>
-                        <span class="item_descripition">Ajuda</span>
-                    </a>
-                    <br>
-                    <a href="#">
-                        <i class="fa-solid fa-door-open"></i>
-                        <span class="item_descripition">Sair</span>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-    </aside>
-    <!-- sessão principal dashboard -->
-    <section style="width: 100%;">
+                        <a href="#" class="menu-item" data-secao="secaoExecucaoProcessos">
+                            <i class="fa-solid fa-arrow-rotate-right"></i>
+                            <span class="item_descripition">Execução</span>
+                            <ul>
+                                <li><a href="#" class="menu-item" data-secao="secaoExecucaoProcessos">Processos</a></li>
+                                <li><a href="#" class="menu-item" data-secao="secaoExecucaoProtocolos">Protocolos</a>
+                                </li>
+                            </ul>
+                        </a>
 
-        <!-- MENU SUPERIOR -->
+                        <a href="#" class="menu-item" data-secao="secaoAjuda">
+                            <i class="fa-solid fa-circle-question"></i>
+                            <span class="item_descripition">Ajuda</span>
+                        </a>
+                        <br>
+                        <a href="#" class="menu-item" data-secao="secaoSair">
+                            <i class="fa-solid fa-door-open"></i>
+                            <span class="item_descripition">Sair</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+        <section style="width: 100%;">
 
-            <nav class ="menu_superior">
-                <button>Prestação de Contas</button>
-                <button>Gestão Patrimonial</button>
-                <button>Gestão de Frota</button>
-                <button>Pesquisa</button>
-                <button>Gestão de Documentos</button>
-                <button>Ajuda</button>
-                <button>Sair</button>
+            <nav class="menu_superior">
+                <button class="menu-item-superior" data-secao="secaoPlanoTrabalhoCriar">Prestação de Contas</button>
+                <button class="menu-item-superior" data-secao="secaoGestaoPatrimonial">Gestão Patrimonial</button>
+                <button class="menu-item-superior" data-secao="secaoGestaoFrota">Gestão de Frota</button>
+                <button class="menu-item-superior" data-secao="secaoPesquisa">Pesquisa</button>
+                <button class="menu-item-superior" data-secao="secaoGestaoDocumentos">Gestão de Documentos</button>
+                <button class="menu-item-superior" data-secao="secaoAjudaSuperior">Ajuda</button>
+                <button class="menu-item-superior" data-secao="secaoSairSuperior">Sair</button>
             </nav>
 
-        <!-- CONTEÚDO PRINCIPAL -->
-        <section class="conteudo_principal container" style="overflow-y: auto;">
-            <h1 class="titulo_pagina">Criar Plano de Trabalho</h1>
+            <section class="conteudo_principal container" style="overflow-y: auto;">
 
-        
-        
-            <!-- DADOS DO INSTRUMENTO -->
-            <section class="dados_do_instrumento_header">
-                <h4>Dados do Instrumento</h4>
-            </section>
-            
+                <div id="secaoHome" class="secao-conteudo text-center home-screen">
+                    <h1 class="titulo_pagina">SGI - PrestContas | Sistema de Gestão Integrada</h1>
+                    <img src="../imgs_logo/PrestContas.png" alt="Logo PrestContas" class="img-fluid logo-home"
+                        style="max-width: 100%;">
+                    <h2 class="mt-4">DEP. ENGENHARIA DE SOFTWARES</h2>
+                </div>
 
-            <div id="container_tabela">
-            <section class="card dados_do_instrumento">
-                <article class="card-body">
-                    <article class="linha"><h3>IDENTIFICADOR:</h3> 14.638</article>
-                    <article class="linha">
-                        <article><h4>ENTIDADE:</h4> MUNICÍPIO DE PAULISTA</article>
-                        <article><h4>CONCEDENTE:</h4> MINISTÉRIO DA CULTURA</article>
-                        <article><h4>INTERVENIENTE:</h4> -</article>
-                    </article>
-                    <article class="linha">
-                        <article><h4>SETOR:</h4> GOVERNO FEDERAL/CAIXA</article>
-                        <article><h4>CATEGORIA:</h4> CULTURA FUNDO A FUNDO</article>
-                        <article><h4>PALAVRA CHAVE:</h4> Lei Aldir Blanc</article>
-                        <article><h4>TIPO DE INSTRUMENTO:</h4> FUNDO A FUNDO</article>
-                    </article>
-                    <article class="linha">
-                        <article class="col_texto">
-                            <h3>OBJETO:</h3>
-                            A finalidade desse instrumento é estabelecer diretrizes e ações para a execução da Lei Aldir Blanc,
-                            visando a promoção e valorização da cultura local por meio do incentivo financeiro e de apoio
-                            aos artistas e espaços culturais afetados pela pandemia.
-                        </article>
-                        <article class="col_info">
-                            <h3>SIAFI/SICONV:</h3> - <br>
-                            <h3>Nº OPERAÇÃO:</h3> 30882120250002021887
-                        </article>
-                    </article>
-                    <article class="linha">
-                        <article><h3>RESPONSÁVEL:</h3> Railani Pereira da Silva</article>
-                        <article><h3>TIPO DE CHECKLIST:</h3> ALDIR BLANC</article>
-                        <article><h3>EXECUÇÕES:</h3> 1</article>
-                    </article>
-                </article>
-            </section>
-            </div>
-            <!-- BOTÃO ADICIONAR -->
-            <article class="botoes_acoes">
-                <button class="btn_adicionar">Adicionar</button>
-            </article>
 
-            <!-- TABELA -->
-            <div id="container_tabela">
-            <section class="tabela_container card">
-                <article class="card_body">
-                    <table class="tabela">
-                        <thead>
-                            <tr>
-                                <th>OBJETO</th>
-                                <th>INÍCIO</th>
-                                <th>TÉRMINO</th>
-                                <th>REPASSE</th>
-                                <th>CONTRAPARTIDA</th>
-                                <th>TOTAL</th>
-                                <th>AÇÕES</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>LEI ALDIR BLANC CICLO 2</td>
-                                <td>15 de Abril de 2025</td>
-                                <td>31 de Dezembro de 2029</td>
-                                <td>410.654,96</td>
-                                <td>0,00</td>
-                                <td>410.654,96</td>
-                                <td>
-                                    <button class="acao_editar">✏️</button>
-                                    <button class="acao_excluir">🗑️</button>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </article>
+                <div id="secaoPlanoTrabalhoCriar" class="secao-conteudo d-none">
+                    <h1 class="titulo_pagina">Criar Plano de Trabalho</h1>
+
+                    <section class="dados_do_instrumento_header">
+                        <h4>Dados do Instrumento</h4>
+                    </section>
+
+
+                    <div id="container_tabela">
+                        <section class="card dados_do_instrumento">
+                            <article class="card-body">
+                                <article class="linha">
+                                    <h3>IDENTIFICADOR:</h3> 14.638
+                                </article>
+                                <article class="linha">
+                                    <article>
+                                        <h4>ENTIDADE:</h4> MUNICÍPIO DE PAULISTA
+                                    </article>
+                                    <article>
+                                        <h4>CONCEDENTE:</h4> MINISTÉRIO DA CULTURA
+                                    </article>
+                                    <article>
+                                        <h4>INTERVENIENTE:</h4> -
+                                    </article>
+                                </article>
+                                <article class="linha">
+                                    <article>
+                                        <h4>SETOR:</h4> GOVERNO FEDERAL/CAIXA
+                                    </article>
+                                    <article>
+                                        <h4>CATEGORIA:</h4> CULTURA FUNDO A FUNDO
+                                    </article>
+                                    <article>
+                                        <h4>PALAVRA CHAVE:</h4> Lei Aldir Blanc
+                                    </article>
+                                    <article>
+                                        <h4>TIPO DE INSTRUMENTO:</h4> FUNDO A FUNDO
+                                    </article>
+                                </article>
+                                <article class="linha">
+                                    <article class="col_texto">
+                                        <h3>OBJETO:</h3>
+                                        A finalidade desse instrumento é estabelecer diretrizes e ações para a execução
+                                        da Lei Aldir Blanc,
+                                        visando a promoção e valorização da cultura local por meio do incentivo
+                                        financeiro e de apoio
+                                        aos artistas e espaços culturais afetados pela pandemia.
+                                    </article>
+                                    <article class="col_info">
+                                        <h3>SIAFI/SICONV:</h3> - <br>
+                                        <h3>Nº OPERAÇÃO:</h3> 30882120250002021887
+                                    </article>
+                                </article>
+                                <article class="linha">
+                                    <article>
+                                        <h3>RESPONSÁVEL:</h3> Railani Pereira da Silva
+                                    </article>
+                                    <article>
+                                        <h3>TIPO DE CHECKLIST:</h3> ALDIR BLANC
+                                    </article>
+                                    <article>
+                                        <h3>EXECUÇÕES:</h3> 1
+                                    </article>
+                                </article>
+                            </article>
+                        </section>
+                    </div>
+                    <article class="botoes_acoes">
+                        <button class="btn_adicionar">Adicionar</button>
+                    </article>
+
+                    <div id="container_tabela">
+                        <section class="tabela_container card">
+                            <article class="card_body">
+                                <table class="tabela">
+                                    <thead>
+                                        <tr>
+                                            <th>OBJETO</th>
+                                            <th>INÍCIO</th>
+                                            <th>TÉRMINO</th>
+                                            <th>REPASSE</th>
+                                            <th>CONTRAPARTIDA</th>
+                                            <th>TOTAL</th>
+                                            <th>AÇÕES</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>LEI ALDIR BLANC CICLO 2</td>
+                                            <td>15 de Abril de 2025</td>
+                                            <td>31 de Dezembro de 2029</td>
+                                            <td>410.654,96</td>
+                                            <td>0,00</td>
+                                            <td>410.654,96</td>
+                                            <td>
+                                                <button class="acao_editar">✏️</button>
+                                                <button class="acao_excluir">🗑️</button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </article>
+                        </section>
+                    </div>
+                </div>
+
+                <div id="secaoGestaoPatrimonial" class="secao-conteudo d-none">
+                    <h1 class="titulo_pagina">Gestão Patrimonial</h1>
+                    <img src="../imgs_logo/PrestContas.png" alt="Logo PrestContas" class="img-fluid logo-secao">
+                </div>
+
+                <div id="secaoGestaoFrota" class="secao-conteudo d-none">
+                    <h1 class="titulo_pagina">Gestão de Frota</h1>
+                    <img src="../imgs_logo/PrestContas.png" alt="Logo PrestContas" class="img-fluid logo-secao">
+                </div>
+
+                <div id="secaoPesquisa" class="secao-conteudo d-none">
+                    <h1 class="titulo_pagina">Pesquisa</h1>
+                    <img src="../imgs_logo/PrestContas.png" alt="Logo PrestContas" class="img-fluid logo-secao">
+                </div>
+
+                <div id="secaoGestaoDocumentos" class="secao-conteudo d-none">
+                    <h1 class="titulo_pagina">Gestão de Documentos</h1>
+                    <img src="../imgs_logo/PrestContas.png" alt="Logo PrestContas" class="img-fluid logo-secao">
+                </div>
+
+                <div id="secaoAjudaSuperior" class="secao-conteudo d-none">
+                    <h1 class="titulo_pagina">Ajuda</h1>
+                    <img src="../imgs_logo/PrestContas.png" alt="Logo PrestContas" class="img-fluid logo-secao">
+                </div>
+
+                <div id="secaoSairSuperior" class="secao-conteudo d-none">
+                    <h1 class="titulo_pagina">Sair</h1>
+                    <img src="../imgs_logo/PrestContas.png" alt="Logo PrestContas" class="img-fluid logo-secao">
+                </div>
             </section>
-            </div>
+
+
+            <footer class="rodape">
+                <p>&copy; 2025 PrestContas&reg;</p>
+            </footer>
         </section>
-    
-    <!-- RODAPÉ -->
-        <footer class="rodape">
-            <p>&copy; 2025 PrestContas&reg;</p>
-        </footer>
-    </section>
     </main>
-        
-    
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-    <script type="module" src="src/js/main_dashboard.js"></script>
+    <script type="module" src="../js/navigation.js"></script>
+    <script type="module" src="../js/main_dashboard.js"></script>
 </body>
+
 </html>
